@@ -1,5 +1,5 @@
 import {
-  LayoutDashboard, MapPinned, Building2, Users, Receipt, Wallet, Settings,
+  LayoutDashboard, MapPinned, Building2, Users, Receipt, Wallet, Settings, FileBarChart,
 } from 'lucide-react'
 
 // Each menu maps to a table group in the htms database.
@@ -36,6 +36,13 @@ export const nav = [
     children: [
       { label: 'All Collections', to: '/collections', perm: 'holding.collections.view' },
       { label: 'New Collection', to: '/collections/new', perm: 'holding.collections.create' },
+    ],
+  },
+  {
+    label: 'Reports', icon: FileBarChart,
+    children: [
+      { label: 'Collection Detail', to: '/reports/collection-detail', perm: 'holding.collections.view' },
+      { label: 'Collection Summary', to: '/reports/collection-summary', perm: 'holding.collections.view' },
     ],
   },
   {

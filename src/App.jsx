@@ -18,6 +18,7 @@ import Collections from './pages/collections/Collections.jsx'
 import NewCollection from './pages/collections/NewCollection.jsx'
 import ReceiptView from './pages/collections/ReceiptView.jsx'
 import { Business, SystemConfig } from './pages/settings/Business.jsx'
+import { CollectionDetailReport, CollectionSummaryReport } from './pages/reports/CollectionReports.jsx'
 import { Users, Overrides } from './pages/settings/Users.jsx'
 import Roles from './pages/settings/Roles.jsx'
 import Codes from './pages/settings/Codes.jsx'
@@ -44,6 +45,8 @@ export default function App() {
         <Route path="collections" element={<Collections />} />
         <Route path="collections/new" element={<NewCollection />} />
         <Route path="collections/:receiptno" element={<ReceiptView />} />
+        <Route path="reports/collection-detail" element={<CollectionDetailReport />} />
+        <Route path="reports/collection-summary" element={<CollectionSummaryReport />} />
         <Route path="settings/business" element={<Business />} />
         <Route path="settings/users" element={<Users />} />
         <Route path="settings/overrides" element={<Overrides />} />
